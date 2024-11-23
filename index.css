@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    overflow-x: hidden;
+
+}
+.container {
+    margin:0 7rem ;
+    height: 100%;
+  
+}
+a {
+    text-decoration: none;
+  }
+  
+
+
+  ul {
+      list-style: none;
+  }
+  #home {
+      height: 100vh;
+      background: #fff;
+      color: black;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+
+}
+nav .logo {
+    width: 80px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul a {
+    color: black;
+    padding: 20px;
+}
+#home ul li a:hover{
+    border-bottom: 2px solid #38b7bb;
+}
+#home .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+#home .content img {
+    width: 900px;
+    animation:  animation1 1s ease-out;
+}
+#home .content .content-text h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+#home .content .content-text h1 span {
+    font-size: 70px;
+    padding: 10px 15px;
+}
+#home .content .content-text p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 60%;
+    color: black;
+}
+.btn{
+        font-size: 14px;
+        padding: 10px 15px;
+        background-color: #38b7bb;
+        color: black;
+        border-radius: 30px;
+        transition: all 0.2s;
+}
+.btn:hover {
+    background-color: transparent;
+    color: #38b7bb;
+    border: 1px solid rgb(12, 12, 12)
+}
+.social {
+    margin-left: 3rem;
+    animation: animation1 1s ease-out;
+}
+
+.social i {
+   color:peru;
+   font-size: 30px;
+   margin: 15px 0; 
+}
+
+
+@keyframes animation1 {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animation2 {
+    0%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
