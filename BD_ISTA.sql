@@ -1,12 +1,11 @@
-create database ISTA ;
+CREATE DATABASE ISTA;
 USE ISTA;
-Create table stagiaire (
-matStagiaire int  AUTO_INCREMENT ,
-nomStagiaire varchar(20) ,
-prenomStagiaire varchar(20),
-filiereStagaire varchar(20),
-anneeEtude varchar(20),
-typeBac varchar(20),
-anneBac varchar(20),
-primary key (matStagiaire)
+CREATE TABLE stagiaires (
+    matStagiaire INT PRIMARY KEY AUTO_INCREMENT,
+    nomStagiaire VARCHAR(100) NOT NULL,
+    prenomStagiaire VARCHAR(100) NOT NULL,
+    filiereStagiaire VARCHAR(50) NOT NULL,
+    anneeEtude YEAR NOT NULL,
+    typeBac VARCHAR(50),
+    anneeBac YEAR
 );
