@@ -1,123 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet');
 
-
+.bar {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Oswald", sans-serif;
     overflow-x: hidden;
+}
 
-}
 .container {
-    margin:0 7rem ;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1200px;
     height: 100%;
-  
 }
+
 a {
     text-decoration: none;
-  }
-  
+}
 
+ul {
+    list-style: none;
+}
 
-  ul {
-      list-style: none;
-  }
-  #home {
-      height: 100vh;
-      background: #fff;
-      color: black;
-  }
-  nav {
+#home {
+    height: 100vh;
+    background: #fff;
+    color: black;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
-    align-items: center;
+    align-items:center;
+    width: 100%;
 
 }
+
 nav .logo {
     width: 80px;
 }
+
 nav ul {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
+
 nav ul a {
     color: black;
-    padding: 20px;
+    padding: 10px 15px;
 }
-#home ul li a:hover{
+
+#home ul li a:hover {
     border-bottom: 2px solid #38b7bb;
 }
+
 #home .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 70%;
 }
+
 #home .content img {
-    width: 900px;
-    animation:  animation1 1s ease-out;
+    width: 100%;
+    max-width: 500px;
+    animation: animation1 1s ease-out;
 }
+
+#home .content .content-text {
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+}
+
 #home .content .content-text h1 {
-    font-size: 50px;
+    font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 10px;
-    padding: 10px 15px;
 }
+
 #home .content .content-text h1 span {
-    font-size: 70px;
-    padding: 10px 15px;
+    font-size: 3rem;
 }
+
 #home .content .content-text p {
     font-weight: 300;
     margin-bottom: 30px;
     line-height: 1.4;
-    width: 60%;
     color: black;
 }
-.btn{
-        font-size: 14px;
-        padding: 10px 15px;
-        background-color: #38b7bb;
-        color: black;
-        border-radius: 30px;
-        transition: all 0.2s;
+
+.btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #38b7bb;
+    color: black;
+    border-radius: 30px;
+    transition: all 0.2s;
 }
+
 .btn:hover {
     background-color: transparent;
     color: #38b7bb;
-    border: 1px solid rgb(12, 12, 12)
+    border: 1px solid rgb(12, 12, 12);
 }
+
 .social {
-    margin-left: 3rem;
+    margin-top: 2rem;
+    text-align: center;
     animation: animation1 1s ease-out;
 }
 
 .social i {
-   color:peru;
-   font-size: 30px;
-   margin: 15px 0; 
+    color: peru;
+    font-size: 30px;
+    margin: 15px 0;
 }
 
-
+/* Animations */
 @keyframes animation1 {
-    0%{
+    0% {
         transform: translateX(500px);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
+
 @keyframes animation2 {
-    0%{
+    0% {
         transform: translateY(200px);
     }
-    100%{
+    100% {
         transform: translateY(0);
     }
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 1rem;
+    }
 
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #home .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #home .content img {
+        max-width: 300px;
+    }
+
+    #home .content .content-text h1 {
+        font-size: 2rem;
+    }
+
+    #home .content .content-text h1 span {
+        font-size: 2.5rem;
+    }
+
+    #home .content .content-text p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .logo {
+        width: 60px;
+    }
+
+    #home .content .content-text h1 {
+        font-size: 1.5rem;
+    }
+
+    #home .content .content-text h1 span {
+        font-size: 2rem;
+    }
+
+    #home .content img {
+        max-width: 200px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .social i {
+        font-size: 20px;
+    }
+}

@@ -4,9 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+
     <title>Liste des Stagiaires</title>
 </head>
 <body>
+<h1 id="bar">Gestion des Stagiaires - ISTA</h1>
+    <nav>
+        <img src="dff215f1e5690e1baa3a7bcb8bb5c9e1.png" class="logo" alt="logo">
+        <ul>
+            <li><a href="index.html">Page Principale </a></li>
+            <li><a href="ajout_stagiaire.php">Ajouter </a></li>
+            <li><a href="consulter.php">Consulter </a></li>
+            <li><a href="modifier.php">Modifier </a></li>
+            <li><a href="liste.php">Liste</a></li>
+        </ul>
+    </nav>
     <h2>Liste des Stagiaires</h2>
     <form method="GET">
         <label>Filière :</label>
