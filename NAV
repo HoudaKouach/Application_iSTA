@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestion des Stagiaires - ISTA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basics */
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: 'Lato', sans-serif;
+			line-height: 1;
+		}
+
+		body {
+			background-color: #F5F6F8;
+			overflow: hidden;
+		}
+
+		/* Colors */
+		:root {
+			--sidebar-background-color: #313443;
+			--active-sidebar-link-color: #22252E;
+			--hover-sidebar-link-color: #22252E;
+			--active-link-color: #98D7EC;
+			--tooltip-background-color: #313443;
+		}
+
+		.sidebar-navigation {
+			display: inline-block;
+			min-height: 100vh;
+			width: 80px;
+			background-color: var(--sidebar-background-color);
+			float: left;
+		}
+
+		.sidebar-navigation ul {
+			text-align: center;
+			color: white;
+		}
+
+		.sidebar-navigation ul li {
+			padding: 28px 0;
+			cursor: pointer;
+			transition: all ease-out 120ms;
+			position: relative;
+		}
+
+		.sidebar-navigation ul li i {
+			display: block;
+			font-size: 24px;
+			transition: all ease 450ms;
+		}
+
+		.sidebar-navigation ul li .tooltip {
+			display: inline-block;
+			position: absolute;
+			background-color: var(--tooltip-background-color);
+			padding: 8px 15px;
+			border-radius: 3px;
+			margin-top: -26px;
+			left: 90px;
+			opacity: 0;
+			visibility: hidden;
+			font-size: 13px;
+			letter-spacing: 0.5px;
+		}
+
+		.sidebar-navigation ul li .tooltip:before {
+			content: '';
+			display: block;
+			position: absolute;
+			left: -4px;
+			top: 10px;
+			transform: rotate(45deg);
+			width: 10px;
+			height: 10px;
+			background-color: inherit;
+		}
+
+		.sidebar-navigation ul li:hover {
+			background-color: var(--hover-sidebar-link-color);
+		}
+
+		.sidebar-navigation ul li:hover .tooltip {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.sidebar-navigation ul li.active {
+			background-color: var(--active-sidebar-link-color);
+		}
+
+		.sidebar-navigation ul li.active i {
+			color: var(--active-link-color);
+		}
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation déplacée à droite -->
+    <nav class="sidebar-navigation">
+        <ul>
+            <li class="active">
+                <i class="fa fa-home"></i>
+                <span class="tooltip">Page Principale</span>
+            </li>
+            <li>
+                <i class="fa fa-user-plus"></i>
+                <span class="tooltip">Ajouter un Stagiaire</span>
+            </li>
+            <li>
+                <i class="fa fa-search"></i>
+                <span class="tooltip">Consulter les données d'un Stagiaire</span>
+            </li>
+            <li>
+                <i class="fa fa-edit"></i>
+                <span class="tooltip">Modifier les données d'un Stagiaire</span>
+            </li>
+            <li>
+                <i class="fa fa-list"></i>
+                <span class="tooltip">Liste de Stagiaires</span>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

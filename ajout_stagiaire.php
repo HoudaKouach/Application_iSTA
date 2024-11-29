@@ -3,23 +3,17 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleNav.css">
     <link rel="stylesheet" href="index.css">
 
     <title>Ajouter un Stagiaire</title>
 </head>
 <body>
 <h1 id="bar">Gestion des Stagiaires - ISTA</h1>
-    <nav>
-        <img src="dff215f1e5690e1baa3a7bcb8bb5c9e1.png" class="logo" alt="logo">
-        <ul>
-            <li><a href="index.html">Page Principale </a></li>
-            <li><a href="ajout_stagiaire.php">Ajouter </a></li>
-            <li><a href="consulter.php">Consulter </a></li>
-            <li><a href="modifier.php">Modifier </a></li>
-            <li><a href="liste.php">Liste</a></li>
-        </ul>
-    </nav>
+    <!-- Inclure la barre de navigation -->
+     <?php include 'nav.php'; ?>
     <h2>Ajouter un Stagiaire</h2>
     <form action="ajout_stagiaire.php" method="POST">
         <label>Nom :</label>

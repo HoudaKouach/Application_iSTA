@@ -9,3 +9,12 @@ CREATE TABLE stagiaires (
     typeBac VARCHAR(50),
     anneeBac YEAR
 );
+USE ISTA;
+Create table absences(
+idAbsence INT primary KEY auto_increment,
+nombreHeure INT NOT NULL,
+DateAbsence date NOT NULL ,
+Justifie boolean Not null ,
+matStagiaire INT ,
+foreign key (matStagiaire) references stagiaires(matStagiaire)
+);

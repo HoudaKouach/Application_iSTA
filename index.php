@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleNav.css">
     <title>Gestion des Stagiaires - ISTA</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1 id="bar">Gestion des Stagiaires - ISTA</h1>
-    <nav>
-        <img src="dff215f1e5690e1baa3a7bcb8bb5c9e1.png" class="logo" alt="logo">
-        <ul>
-            <li><a href="index.html">Page Principale </a></li>
-            <li><a href="ajout_stagiaire.php">Ajouter </a></li>
-            <li><a href="consulter.php">Consulter </a></li>
-            <li><a href="modifier.php">Modifier </a></li>
-            <li><a href="liste.php">Liste</a></li>
-        </ul>
-    </nav>
+    <!-- Inclure la barre de navigation -->
+<?php include 'nav.php'; ?>
     <div id="home">
         <div class="container">
            

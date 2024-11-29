@@ -1,0 +1,86 @@
+.bar span {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+
+}
+.bar {
+    display: block;
+    align-items: center;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: aqua;
+    align-content: center;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight: bold;
+}
+/* Style général de la sidebar */
+.sidebar-navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+}
+
+.sidebar-navigation ul li {
+    HEIGHT: max-content;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50PX;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-navigation ul li i {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.sidebar-navigation ul li .tooltip {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    background: #444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: none;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.sidebar-navigation ul li:hover i {
+    color: #00bcd4;
+}
+
+.sidebar-navigation ul li:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+.sidebar-navigation ul li.active i {
+    color: #00bcd4;
+}
